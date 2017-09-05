@@ -1,0 +1,104 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .color-bar {
+        background-color: #bf0067;
+        height: 15px;
+        transition: all .2s ease;
+    }
+
+    .collapse>.container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .bg-light {
+        background-color: white !important;
+    }
+
+    .navbar-brand {
+        color: #bf0067 !important;
+        position: absolute;
+        display: block;
+        height: 120px;
+        width: 250px;
+        line-height: 110px;
+        margin: 0 auto;
+        text-align: center;
+        left: inherit;
+        background-color: white;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+        z-index: 100;
+        transition: all .2s ease;
+    }
+
+    .navbar li {
+        font-weight: bold;
+        padding: 15px;
+        text-transform: uppercase;
+    }
+
+    .navbar li a {
+        color: aqua;
+    }
+
+    .carousel {
+        background-color: black;
+    }
+
+    .carousel-inner img {
+        opacity: .2;
+    }
+
+    .carousel-caption {
+        height: 65%;
+        text-align: left;
+    }
+
+    .btn-outline-secondary {
+        color: white;
+        border-color: white;
+    }
+
+    .btn-outline-secondary:hover {
+        background-color: #bf0067;
+        border-color: #bf0067;
+    }
+
+    @media(max-width: 992px) {
+        .navbar-brand {
+            width: 200px;
+        }
+
+        .navbar li {
+            padding: 5px;
+            text-transform: uppercase;
+        }
+    }
+
+    @media(max-width: 768px) {
+        .navbar-brand {
+            position: static;
+            display: block;
+            height: 40px;
+            width: 180px;
+            line-height: 30px;
+            margin: 0;
+            text-align: center;
+            left: inherit;
+            background-color: white;
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.0);
+            z-index: 100;
+        }
+        .collapse>.container {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .color-bar {
+            background-color: #bf0067;
+            height: 0px;
+        }
+    }
