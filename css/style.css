@@ -65,13 +65,108 @@
     .btn-outline-secondary:hover {
         background-color: #bf0067;
         border-color: #bf0067;
+        cursor: pointer;
+    }
+
+    .price-list-main .price-list-main-buttons {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+
+    .price-list-main-buttons button {
+        margin: 10px;
+    }
+
+    .price-list-main .btn-outline-primary {
+        color: #bf0067;
+        border-color: #bf0067;
+    }
+
+    .price-list-main .btn-outline-primary:hover {
+        background-color: #bf0067;
+        color: white;
+        cursor: pointer;
+    }
+
+    .price-list-main-buttons .active {
+        background-color: #bf0067;
+        color: white;
+    }
+
+    .price-list {
+        padding: 15px;
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+        margin-bottom: auto;
+    }
+
+    .price-list a {
+        color: #747474;
+        border-bottom: 2px dashed #e5e5e5;
+        padding: 25px;
+        font-weight: 900;
+        text-decoration: none;
+    }
+
+    .price-list span {
+        position: absolute;
+        right: 40px;
+    }
+
+    .price-list a:last-child {
+        border-bottom: none;
+    }
+
+    .price-list a:hover {
+        color: #bf0067;
+    }
+
+    .price-list .active {
+        color: #bf0067;
+        background-color: transparent;
+    }
+
+    .tab-pane>.container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .tab-pane .tab-content {
+        margin-left: 20px;
+    }
+
+    .img-thumbnail {
+        border: none;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .tab-pane h2 {
+        color: #333;
+        padding: 15px 0;
+        margin: 0;
+    }
+
+    .tab-pane h6 {
+        color: #bf0067;
+        padding: 15px 0;
+    }
+
+    .tab-pane p {
+        color: #333;
+        text-align: justify;
+        padding: 15px 0;
+    }
+
+    footer {
+        background-color: #444;
+        height: 100px;
     }
 
     @media(max-width: 992px) {
         .navbar-brand {
             width: 200px;
         }
-
         .navbar li {
             padding: 5px;
             text-transform: uppercase;
