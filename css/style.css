@@ -2,7 +2,6 @@
         margin: 0;
         padding: 0;
         font-family: 'Open Sans', sans-serif;
-
     }
 
     .color-bar {
@@ -70,7 +69,8 @@
         cursor: pointer;
     }
 
-    .carousel+.color-bar {
+    .carousel~.color-bar,
+    section~.color-bar {
         height: 4px;
     }
 
@@ -152,7 +152,6 @@
         border-radius: 0;
     }
 
-
     .tab-pane h2 {
         color: #333;
         padding: 15px 0;
@@ -170,95 +169,116 @@
         padding: 15px 0;
     }
 
-.team-section{
-    background-color: lightgray;
-    background-image: url("/img/brickwall.png");
-    /*This pattern is downloaded from www.subtlepatterns.com*/
-    background-attachment: fixed;
+    .team-section {
+        background-color: lightgray;
+        background-image: url("../img/brickwall.png");
+        /*This pattern is downloaded from www.subtlepatterns.com*/
+        background-attachment: fixed;
+    }
 
+    .team-member {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
 
-}
-.team-member{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px;
-}
+    .team-describe-left {
+        width: 70%;
+        padding: 35px;
+        padding-right: 95px;
+        background-color: white;
+        box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2);
+        z-index: 0;
+        position: relative;
+        left: 65px;
+    }
 
-.team-describe-left{
-    width: 70%;
-    padding: 30px;
-    padding-right: 95px;
-    background-color: white;
-    box-shadow: 5px 5px 15px 0 rgba(0,0,0,0.2);
-    z-index: 0;
-    position: relative;
-    left: 80px;
-}
-.team-describe-left h5{
-    padding-top: 15px;
-    padding-right: 80px;
-    text-align: justify;
-}
+    .team-describe-left h5 {
+        padding-top: 15px;
+        padding-right: 70px;
+        text-align: justify;
+    }
 
-.team-describe-left h6{
-    padding-top: 10px;
-    color: #bf0067;
-}
+    .team-describe-left h6 {
+        padding-top: 10px;
+        color: #bf0067;
+    }
 
+    .img-team-right {
+        border: 4px solid #bf0067;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2);
+        position: relative;
+        left: -65px;
+    }
 
-.img-team-right{
-    border: 4px solid #bf0067;
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
-    box-shadow: 5px 5px 15px 0 rgba(0,0,0,0.2);
-     position: relative;
-    left: -80px;
-}
+    .team-describe-right {
+        width: 70%;
+        padding: 35px;
+        padding-left: 80px;
+        background-color: white;
+        box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2);
+        z-index: 0;
+        position: relative;
+        left: -65px;
+    }
 
-.team-describe-right{
-    width: 70%;
-    padding: 30px;
-    padding-left: 80px;
-    background-color: white;
-    box-shadow: 5px 5px 15px 0 rgba(0,0,0,0.2);
-    z-index: 0;
-    position: relative;
-    left: -80px;
-}
+    .team-describe-right h3 {
+        padding-left: 85px;
+    }
 
-.team-describe-right h3{
-    padding-left: 95px;
-}
+    .team-describe-right h5 {
+        padding-top: 15px;
+        padding-left: 85px;
+        text-align: justify;
+    }
 
-.team-describe-right h5{
-    padding-top: 15px;
-    padding-left: 95px;
-}
+    .team-describe-right h6 {
+        padding-top: 10px;
+        padding-left: 85px;
+        color: #bf0067;
+    }
 
-.team-describe-right h6{
-    padding-top: 10px;
-    padding-left: 95px;
-    color: #bf0067;
-}
-
-
-.img-team-left{
-    border: 4px solid #bf0067;
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
-    box-shadow: 5px 5px 15px 0 rgba(0,0,0,0.2);
-    z-index: 10;
-    position: relative;
-    left: 80px;
-}
+    .img-team-left {
+        border: 4px solid #bf0067;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2);
+        z-index: 10;
+        position: relative;
+        left: 65px;
+    }
 
     footer {
         background-color: #444;
         height: 100px;
     }
+
+#contact .container{
+    margin-bottom: 50px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact h4{
+    color: #bf0067;
+}
+
+
+#map {
+   width: 80%;
+   height: 250px;
+   background-color: grey;
+ }
 
     @media(max-width: 992px) {
         .navbar-brand {
