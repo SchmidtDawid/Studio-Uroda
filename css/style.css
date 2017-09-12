@@ -258,27 +258,32 @@
         height: 100px;
     }
 
-#contact .container{
-    margin-bottom: 50px;
-}
+    #contact .container {
+        margin-bottom: 150px;
+    }
 
-.contact{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
+    .contact {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
 
-.contact h4{
-    color: #bf0067;
-}
+    .map {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
 
+    .contact h4 {
+        color: #bf0067;
+    }
 
-#map {
-   width: 80%;
-   height: 250px;
-   background-color: grey;
- }
+    #map {
+        width: 400px;
+        height: 250px;
+        background-color: grey;
+    }
 
     @media(max-width: 992px) {
         .navbar-brand {
@@ -288,6 +293,14 @@
             padding: 5px;
             text-transform: uppercase;
         }
+
+        .tab-content{
+            margin-top: 30px;
+        }
+    }
+
+    .map {
+        margin-top: 40px;
     }
 
     @media(max-width: 768px) {
@@ -312,5 +325,65 @@
         .color-bar {
             background-color: #bf0067;
             height: 0px;
+        }
+
+        .team-member {
+            flex-direction: column;
+        }
+        .team-member:last-child {
+            flex-direction: column;
+            position: relative;
+            top: -380px;
+        }
+        .team-describe-left {
+            width: 350px;
+            padding-right: 35px;
+            position: static;
+        }
+        .team-describe-left h3 {
+            text-align: center;
+            padding-top: 100px;
+        }
+        .team-describe-left h5 {
+            padding-top: 15px;
+            padding-right: 0px;
+            text-align: justify;
+        }
+        .team-describe-left h6 {
+            padding-top: 10px;
+            text-align: center;
+            color: #bf0067;
+        }
+        .img-team-right {
+            position: relative;
+            left: 0;
+            top: -690px;
+        }
+        .team-describe-right {
+            width: 350px;
+            padding-left: 35px;
+            position: static;
+        }
+        .team-describe-right h3 {
+            padding-left: 0px;
+            padding-top: 100px;
+            text-align: center;
+        }
+        .team-describe-right h5 {
+            padding-left: 0px;
+            text-align: justify;
+        }
+        .team-describe-right h6 {
+            padding-left: 0px;
+            text-align: center;
+            color: #bf0067;
+        }
+        .img-team-left {
+            position: relative;
+            left: 0;
+            top: 120px;
+        }
+        .team {
+            height: 1450px;
         }
     }
