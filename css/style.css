@@ -4,6 +4,28 @@
         font-family: 'Open Sans', sans-serif;
     }
 
+    .alert {
+        text-align: center;
+        padding: 20px;
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    .alert-success {
+        /display: none;
+    }
+
+    .alert-danger {
+        color: #ed0000;
+        /display: none;
+    }
+
+    .close {
+        padding: 18px !important;
+        right: -15px !important;
+        transform: scale(1.5)
+    }
+
     .color-bar {
         background-color: #bf0067;
         height: 15px;
@@ -253,13 +275,70 @@
         left: 65px;
     }
 
-    footer {
-        background-color: #444;
-        height: 100px;
+    #promo img {
+        height: 230px;
+        width: 230px;
+        border: 3px solid #bf0067;
+        border-radius: 50%;
+        margin: 20px;
+        box-shadow: 3px 3px 10px 0 rgba(0,0,0,0.2);
+    }
+
+    #promo .container {
+        padding-bottom: 80px;
+    }
+
+.promo-element{
+}
+
+.zoom-in{
+    animation: zoom 1s;
+}
+
+    .promo-blend {
+        background-color: #bf0067;
+        height: 230px;
+        width: 230px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px;
+        position: absolute;
+        top: 0;
+        color: white;
+        opacity: 0;
+        transition: all .4s ease;
+    }
+
+    .promo-blend a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .promo-blend:hover {
+        opacity: 0.8;
+    }
+
+    .modal {
+        top: 20vh;
+    }
+
+    .modal-title {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #bf0067;
     }
 
     #contact .container {
-        margin-bottom: 150px;
+        padding-bottom: 150px;
+    }
+
+    #contact {
+        background-image: url(../brickwall.png);
+        background-attachment: fixed;
     }
 
     .contact {
@@ -285,6 +364,11 @@
         background-color: grey;
     }
 
+    footer {
+        background-color: #444;
+        height: 100px;
+    }
+
     @media(max-width: 992px) {
         .navbar-brand {
             width: 200px;
@@ -293,8 +377,7 @@
             padding: 5px;
             text-transform: uppercase;
         }
-
-        .tab-content{
+        .tab-content {
             margin-top: 30px;
         }
     }
@@ -387,3 +470,12 @@
             height: 1450px;
         }
     }
+
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

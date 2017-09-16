@@ -85,9 +85,21 @@
 
     </header>
     <main>
+        <section id="alert">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button> Uwaga w związku z przerwą urlopową najbliższe wolne terminy będą dostępne po 30.09
+            </div>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button> Super promocja na czyściki do demakijażu! Zapytaj w salonie. (ważne do jutra)
+            </div>
+        </section>
         <section id="price-list" class="price-list-main">
             <div class="section-title">
-                <h2>Nasze propozycje</h2>
+                <h2>Usługi</h2>
             </div>
             <!--<div class="container">
                 <div class="container price-list-main-buttons">
@@ -262,6 +274,64 @@
             </div>
         </section>
         <div class="color-bar"></div>
+        <section id="promo">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Czy już znasz?</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="promo-element">
+                            <div>
+                                <img src="img/pexels-photo-355197.jpeg">
+                            </div>
+                            <a href="#team" data-toggle="modal" data-target="#promo-service-1">
+                                <div class="promo-blend">
+                                    <h3>nazwa usługi</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="promo-element">
+                            <div>
+                                <img src="img/cosmetics-makeup-make-up-brush-60571.jpeg">
+                            </div>
+                            <a href="#team" data-toggle="modal" data-target="#promo-service-2">
+                                <div class="promo-blend">
+                                    <h3>nazwa usługi</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="promo-element">
+                            <div>
+                                <img src="img/pexels-photo-301367.jpeg">
+                            </div>
+                            <a href="#team" data-toggle="modal" data-target="#promo-service-3">
+                                <div class="promo-blend">
+                                    <h3>nazwa usługi</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="promo-element">
+                            <div>
+                                <img src="img/pexels-photo-275765.jpeg">
+                            </div>
+                            <a href="#team" data-toggle="modal" data-target="#promo-service-4">
+                                <div class="promo-blend">
+                                    <h3>nazwa usługi</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="color-bar"></div>
         <section id="contact">
             <div class="container">
                 <div class="section-title">
@@ -290,7 +360,74 @@
     <footer>
 
     </footer>
+    <!-- Modal 1 -->
+    <div class="modal fade" id="promo-service-1" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="promo-service-1-Label">Usługa 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid officia quibusdam aliquam hic dolorum enim quos. Cumque ratione similique omnis doloremque consequuntur, quia consectetur repellat, voluptas commodi neque vitae rerum.</p>
+                </div>
 
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal fade" id="promo-service-2" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="promo-service-2-Label">Usługa 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid officia quibusdam aliquam hic dolorum enim quos. Cumque ratione similique omnis doloremque consequuntur, quia consectetur repellat, voluptas commodi neque vitae rerum.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal 3 -->
+    <div class="modal fade" id="promo-service-3" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="promo-service-3-Label">Usługa 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid officia quibusdam aliquam hic dolorum enim quos. Cumque ratione similique omnis doloremque consequuntur, quia consectetur repellat, voluptas commodi neque vitae rerum.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal 4 -->
+    <div class="modal fade" id="promo-service-4" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="promo-service-4-Label">Usługa 4</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid officia quibusdam aliquam hic dolorum enim quos. Cumque ratione similique omnis doloremque consequuntur, quia consectetur repellat, voluptas commodi neque vitae rerum.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!--Java Script-->
     <script src="js/jquery-3.2.1.min.js"></script>
