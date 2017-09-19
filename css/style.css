@@ -281,19 +281,21 @@
         border: 3px solid #bf0067;
         border-radius: 50%;
         margin: 20px;
-        box-shadow: 3px 3px 10px 0 rgba(0,0,0,0.2);
+        box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
     }
 
     #promo .container {
         padding-bottom: 80px;
     }
 
-.promo-element{
-}
+    .promo-element {
+        transform: scale(0);
+    }
 
-.zoom-in{
-    animation: zoom 1s;
-}
+    .zoom-in {
+        animation: zoom-in 0.4s linear;
+        animation-fill-mode: forwards;
+    }
 
     .promo-blend {
         background-color: #bf0067;
@@ -409,7 +411,6 @@
             background-color: #bf0067;
             height: 0px;
         }
-
         .team-member {
             flex-direction: column;
         }
@@ -471,11 +472,19 @@
         }
     }
 
-@keyframes zoom{
-    0%{
-        transform: scale(0);
+    @keyframes zoom-in{
+        0% {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        70% {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
     }
-    100%{
-        transform: scale(1);
-    }
-}

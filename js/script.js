@@ -1,3 +1,25 @@
+var promoElement = document.querySelectorAll(".promo-element");
+var elemRect = promoElement[0].getBoundingClientRect();
+
+window.onscroll = function(){
+    elemRect = promoElement[0].getBoundingClientRect();
+    if(elemRect.top - window.innerHeight + 60< 0){
+
+        var i = 0;
+        var howManyTimes = promoElement.length;
+
+        function f(){
+            promoElement[i].classList.add("zoom-in");
+            i++;
+            if(i < howManyTimes){
+                setTimeout(f, 150);
+            }
+        }
+        f();
+    }
+}
+
+
 var styles = [
     {
         "featureType": "all",
