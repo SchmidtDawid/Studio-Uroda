@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <div class="color-bar"></div>
+        <div id="top" class="color-bar"></div>
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">Studio Uroda</a>
@@ -24,16 +24,16 @@
                     <div class="container">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Strona Główna</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Usługi</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#price-list">Cennik</a>
+                                <a class="nav-link" href="#price-list">Usługi</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#team">Zespół</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#promo">Propozycje</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Kontakt</a>
                             </li>
                         </ul>
                     </div>
@@ -345,15 +345,7 @@
                         <h1>ul. obecna 12/5<br>50-500 Kowary</h1>
                     </div>
                     <div class="col-lg-6 col-sm-12 map">
-                        <div id="map"></div>
-                        <script>
-
-
-                        </script>
-                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs3rYnhgfZX02iCgD1jLyN6Hi3ONRAaSU&callback=initMap">
-
-
-                        </script>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2522.2138714449006!2d15.838453315748387!3d50.79014487952371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ee59572902467%3A0xedf996fa389620d2!2sChopina+10%2C+58-530+Kowary!5e0!3m2!1spl!2spl!4v1505902287557" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -431,7 +423,9 @@
             </div>
         </div>
     </div>
-
+    <div class="up-button nav-item">
+        <a href="#top">^</a>
+    </div>
     <!--Java Script-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
